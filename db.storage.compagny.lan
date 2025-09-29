@@ -1,0 +1,16 @@
+$TTL 604800
+@ IN SOA dns.federateur.compagny.lan. root.compagny.lan. (
+        2025092901 ; Serial
+        604800     ; Refresh
+        86400      ; Retry
+        2419200    ; Expire
+        604800     ; Negative Cache TTL
+)
+@ IN NS dns.federateur.compagny.lan.
+
+nas IN A 10.1.4.1
+s3  IN A 10.1.4.2
+
+// Enregistrements demandés pour le reverse-proxy
+nasview CNAME r-proxy.federateur.compagny.lan.
+aws     CNAME r-proxy.federateur.compagny.lan.

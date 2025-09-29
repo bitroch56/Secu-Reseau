@@ -1,0 +1,39 @@
+zone "compagny.lan" IN {
+    type master;
+    file "/etc/bind/db.compagny.lan";
+};
+
+zone "admin.compagny.lan" IN {
+    type master;
+    file "/etc/bind/db.admin.compagny.lan";
+};
+
+zone "federateur.compagny.lan" IN {
+    type master;
+    file "/etc/bind/db.federateur.compagny.lan";
+};
+
+zone "storage.compagny.lan" IN {
+    type master;
+    file "/etc/bind/db.storage.compagny.lan";
+};
+
+zone "devdocs.io" IN {
+    type master;
+    file "/etc/bind/db.devdocs.io";
+};
+
+zone "1.1.10.in-addr.arpa" IN {
+    type master;
+    file "/etc/bind/db.rev.1.10";
+};
+
+zone "3.1.10.in-addr.arpa" IN {
+    type master;
+    file "/etc/bind/db.rev.3.10";
+};
+
+zone "4.1.10.in-addr.arpa" IN {
+    type master;
+    file "/etc/bind/db.rev.4.10";
+};
