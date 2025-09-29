@@ -1,0 +1,12 @@
+$TTL 604800
+@ IN SOA dns.ferderateur.compagny.lan. root.compagny.lan. (
+        2025092902 ; Serial (Mettez à jour ce numéro pour indiquer un nouveau fichier)
+        604800     ; Refresh
+        86400      ; Retry
+        2419200    ; Expire
+        604800     ; Negative Cache TTL
+)
+@ IN NS dns.ferderateur.compagny.lan.
+
+; Enregistrements de la zone LAN-SUPERVISION (10.1.2.0/24)
+prometheus IN A 10.1.2.1
